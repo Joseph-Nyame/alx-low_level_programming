@@ -4,31 +4,17 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 
-/**
- * _strlen - length of a string
- * @str: pointer to string
- *
- * Return: length of string
- */
+
 
 size_t _strlen(char *str)
 {
-	size_t i;
+	size_t j;
 
-	for (i = 0; str[i]; i++)
+	for (j = 0; str[j]; j++)
 		;
-	return (i);
+	return (j);
 }
 
-/**
- * append_text_to_file - Appends text at the end of a file.
- * @filename: A pointer to the name of the file.
- * @text_content: The string to add to the end of the file.
- *
- * Return: -1 If the function fails or filename is NULL
- *         -1 If the file does not exist the user lacks write permissions
- *         Else 1.
- */
 
 int append_text_to_file(const char *filename, char *text_content)
 {
