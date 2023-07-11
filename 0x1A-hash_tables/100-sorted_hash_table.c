@@ -9,8 +9,7 @@ void shash_table_delete(shash_table_t *ht);
 
 /**
  * shash_table_create - Creates a sorted hash table.
- * @size: The size 
- * Return: If an error occurs - NULL.
+ 
  *         Otherwise - a pointer to the new sorted hash table.
  */
 shash_table_t *shash_table_create(unsigned long int size)
@@ -37,8 +36,7 @@ shash_table_t *shash_table_create(unsigned long int size)
 /**
  * shash_table_set - Adds an element to a sorted hash table.
  * @ht: A pointer to the sorted hash table.
- * @key: The key to add - cannot be an empty string.
- * @value: The value associated with key.
+
  *
  * Return: Upon failure - 0.
  *         Otherwise - 1.
